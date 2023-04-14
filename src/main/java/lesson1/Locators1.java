@@ -41,11 +41,11 @@ public class Locators1 {
         driver.manage().window().maximize();
 
 //Поиск элемента по id
-        /*driver.get("https://www.guinnessworldrecords.com/records/apply-to-set-or-break-a-record/");
+        driver.get("https://www.guinnessworldrecords.com/records/apply-to-set-or-break-a-record/");
         //ez-accept-all
         driver.findElement(By.id("ez-accept-all")).click();
         Thread.sleep(2000);
-        driver.findElement(By.id("globe")).click();*/
+        driver.findElement(By.id("globe")).click();
 
 //Поиск элемента по name
        /* driver.get("https://uhomki.com.ua/ru/");
