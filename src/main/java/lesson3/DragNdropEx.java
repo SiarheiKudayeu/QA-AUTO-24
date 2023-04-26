@@ -17,21 +17,21 @@ public class DragNdropEx {
         driver.findElement(By.xpath("//i[@id='menu-btn']")).click();
         Thread.sleep(2000);
         actions.moveToElement(driver.findElement
-                (By.xpath("//i[@class='menu-icon icon-ouverture']"))).
+                        (By.xpath("//i[@class='menu-icon icon-ouverture']"))).
                 clickAndHold().moveToElement(driver.findElement(By.xpath("//i[@class='menu-icon dots-icon']")))
                 .release().build().perform();
         Thread.sleep(6000);
-       System.out.println(driver.getTitle());
+        System.out.println(driver.getTitle());
         System.out.println("============");
         driver.findElement(By.xpath("//a[@id='close-btn']")).click();
         Thread.sleep(3000);
         driver.findElement(By.xpath("//i[@id='menu-btn']")).click();
         Thread.sleep(2000);
-        String string ="Это наша строка";
+        String string = "Это наша строка";
         Integer integer = 1;
         WebElement baseElement = driver.findElement(By.xpath("//i[@class='menu-icon icon-projets']"));
         WebElement targetElement = driver.findElement(By.xpath("//i[@class='menu-icon dots-icon']"));
-        actions.dragAndDrop(baseElement,targetElement).perform();
+        actions.dragAndDrop(baseElement, targetElement).perform();
         Thread.sleep(2000);
         System.out.println(driver.getTitle());
         Thread.sleep(2000);

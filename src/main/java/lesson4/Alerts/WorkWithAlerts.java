@@ -17,7 +17,6 @@ public class WorkWithAlerts {
         //button[text()='Click for JS Alert']
 
 
-
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();
         Thread.sleep(1000);
@@ -25,7 +24,7 @@ public class WorkWithAlerts {
         System.out.println(alert.getText());
         alert.accept();
         Thread.sleep(1000);
-        System.out.println("Cоответствует ли 1 текст ожидаемому: "+
+        System.out.println("Cоответствует ли 1 текст ожидаемому: " +
                 driver.findElement(By.xpath("//p[@id='result']")).getText()
                         .equals("You successfully clicked an alert"));
 
@@ -36,7 +35,7 @@ public class WorkWithAlerts {
         System.out.println(alert2.getText());
         alert2.dismiss();
         Thread.sleep(1000);
-        System.out.println("Cоответствует 2 ли текст ожидаемому: "+
+        System.out.println("Cоответствует 2 ли текст ожидаемому: " +
                 driver.findElement(By.xpath("//p[@id='result']")).getText()
                         .equals("You clicked: Cancel"));
 
@@ -49,10 +48,10 @@ public class WorkWithAlerts {
         alert3.sendKeys(text);
         alert.accept();
         Thread.sleep(1000);
-        System.out.println("Cоответствует ли текст 3 ожидаемому: "+
+        System.out.println("Cоответствует ли текст 3 ожидаемому: " +
                 driver.findElement(By.xpath("//p[@id='result']")).getText()
-                        .equals("You entered: "+text));
-        System.out.println("Cодержится ли тескт: "+
+                        .equals("You entered: " + text));
+        System.out.println("Cодержится ли тескт: " +
                 driver.findElement(By.xpath("//p[@id='result']")).getText().contains(text));
         driver.quit();
 

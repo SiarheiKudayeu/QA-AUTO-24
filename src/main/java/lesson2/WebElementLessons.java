@@ -1,7 +1,6 @@
 package lesson2;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -39,9 +38,6 @@ public class WebElementLessons {
         //ChromeOptions options = new ChromeOptions();
 
 
-
-
-
         //getAttribute() получение значения атрибута элемента
         //getCssValue() получение значения заданного свойства CSS
         //getTagName() информация тэге выбранного элемента
@@ -56,11 +52,6 @@ public class WebElementLessons {
         driver.quit();*/
 
 
-
-
-
-
-
         //getLocation() местонахождение верхнего левого угла элемента
         //getSize() информация о ширине и высоте выбранного элемента
         driver.get("https://rozetka.com.ua/ua/");
@@ -70,9 +61,9 @@ public class WebElementLessons {
         System.out.println("Координата x верхнего левого угла элемента " + search.getLocation().x);
         System.out.println("Координата y верхнего левого угла элемента " + search.getLocation().y);
 
-        System.out.println("Размер нашей кнопки "+ buttonSearch.getSize());
-        System.out.println("Высота нашей кнопки "+ buttonSearch.getSize().height);
-        System.out.println("Ширина нашей кнопки "+ buttonSearch.getSize().width);
+        System.out.println("Размер нашей кнопки " + buttonSearch.getSize());
+        System.out.println("Высота нашей кнопки " + buttonSearch.getSize().height);
+        System.out.println("Ширина нашей кнопки " + buttonSearch.getSize().width);
 
 
         //isDisplayed(), isEnabled(), isSelected()

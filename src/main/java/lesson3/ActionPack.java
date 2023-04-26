@@ -6,14 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-import java.time.Duration;
-
 public class ActionPack {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\sele\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-
 
 
         //Для работы с классом Actions и его методами необходимо создать экземпляр
@@ -25,10 +22,8 @@ public class ActionPack {
         driver.get("https://uhomki.com.ua/ru/");
         WebElement fishHome = driver.findElement
                 (By.xpath("//div[@class='header__wrapper']//a[contains(text(),'Аква')]"));
-        int x = fishHome.getLocation().x+(fishHome.getSize().width)/2;
-        int y = fishHome.getLocation().y+(fishHome.getSize().height)/2;
-
-
+        int x = fishHome.getLocation().x + (fishHome.getSize().width) / 2;
+        int y = fishHome.getLocation().y + (fishHome.getSize().height) / 2;
 
 
         //moveToElement() позволяет наводить курсор на элемент.
@@ -40,8 +35,6 @@ public class ActionPack {
         /*actions.moveByOffset(x,y).
                 moveToElement(driver.findElement(By.xpath("//span[text()='Аквариумы']"))).
                 click().build().perform();*/
-
-
 
 
         //moveToElement(element, int xOffset, int yOffset) позволяет наводить курсор на элемент
@@ -60,9 +53,7 @@ public class ActionPack {
         //один из вариантов реализации drag n drop
 
 
-
         //driver.get("https://www.signesduquotidien.org/");
-
 
 
         //keyUp(), keyDown()
@@ -73,10 +64,6 @@ public class ActionPack {
 
         //Alert
         //doubleClick()
-
-
-
-
 
 
     }

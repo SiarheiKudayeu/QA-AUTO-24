@@ -7,25 +7,26 @@ public class exampleExeption {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите знаменатель:");
         int i = scanner.nextInt();
-        if(i==0){
+        if (i == 0) {
             throw new ZeroValueException();
         }
-        if (x/i<0){
+        if (x / i < 0) {
             throw new NegativeValueException();
         }
-        System.out.println(x/i);
+        System.out.println(x / i);
     }
+
     public static void division2(int x) throws ZeroValueEx, NegativeVal {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите знаменатель:");
         int i = scanner.nextInt();
-        if(i==0){
+        if (i == 0) {
             throw new ZeroValueEx("Это значение ноль");
         }
-        if (x/i<0){
+        if (x / i < 0) {
             throw new NegativeVal("Это отрицательное значение");
         }
-        System.out.println(x/i);
+        System.out.println(x / i);
     }
 
     public static void main(String[] args) {
@@ -43,7 +44,7 @@ public class exampleExeption {
         }*/
         try {
             division2(12);
-        }catch (ZeroValueEx|NegativeVal exception){
+        } catch (ZeroValueEx | NegativeVal exception) {
             System.out.println(exception.getMessage());
         }
 

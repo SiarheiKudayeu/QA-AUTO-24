@@ -4,10 +4,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class Waiters {
     public static void main(String[] args) throws InterruptedException {
@@ -71,7 +69,6 @@ public class Waiters {
         //wait.until(ExpectedConditions.elementToBeSelected(userName));
         wait.until(ExpectedConditions.elementSelectionStateToBe(checkBox,false));
         userName.sendKeys("Just Text");*/
-
 
 
         //presenceOfElementLocated(), textToBePresentInElementValue(), invisibilityOf(),

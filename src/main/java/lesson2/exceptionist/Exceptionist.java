@@ -20,7 +20,7 @@ public class Exceptionist {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите знаменатель:");
         int i = scanner.nextInt();
-        System.out.println(12/i);
+        System.out.println(12 / i);
 
     }
 }

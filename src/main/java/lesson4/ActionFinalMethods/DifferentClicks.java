@@ -23,7 +23,7 @@ public class DifferentClicks {
         Thread.sleep(1000);
         Alert alert = driver.switchTo().alert();
         Thread.sleep(1000);
-        System.out.println("Совпадает ли текст 1 модального окна? "+alert.getText().equals("clicked: delete"));
+        System.out.println("Совпадает ли текст 1 модального окна? " + alert.getText().equals("clicked: delete"));
         alert.accept();
         Thread.sleep(1000);
         actions.doubleClick(driver.findElement
@@ -31,7 +31,7 @@ public class DifferentClicks {
         Thread.sleep(1000);
         driver.switchTo().alert();
         System.out.println("Совпадает ли текст 2 модального окна? "
-                +alert.getText().equals("You double clicked me.. Thank You.."));
+                + alert.getText().equals("You double clicked me.. Thank You.."));
         alert.dismiss();
         System.out.println(driver.getTitle());
         driver.quit();

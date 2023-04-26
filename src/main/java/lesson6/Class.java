@@ -23,5 +23,5 @@ public class Class {
         Thread.sleep(4000);
         driver.findElement(By.xpath("//a[@href='/ru/belyy-medved-6kh5kh6sm/14684/']")).click();
     }
-    }
+}
 

@@ -25,6 +25,7 @@ public class DesriptorExample {
                 (By.xpath("//span[@class='site-menu__item']/a[text()='Контактная информация']"));
 
         actions.keyDown(Keys.CONTROL).click(pay).keyUp(Keys.CONTROL).build().perform();
+
         Set<String> secondDescriptors = driver.getWindowHandles();
         secondDescriptors.removeAll(firsDescriptors);
         String descrSecond = secondDescriptors.iterator().next();

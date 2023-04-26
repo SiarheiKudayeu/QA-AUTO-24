@@ -21,7 +21,7 @@ public class ActionsPack {
         System.out.println(driver.getTitle());
         Set<String> firstSet = driver.getWindowHandles();
         actions.moveToElement(driver.findElement
-                (By.xpath("//div[@class='columned block block-4-12']//a[text()='APPLICATION PROCESS']")))
+                        (By.xpath("//div[@class='columned block block-4-12']//a[text()='APPLICATION PROCESS']")))
                 .keyDown(Keys.CONTROL).click().keyUp(Keys.CONTROL).build().perform();
         Set<String> secondSet = driver.getWindowHandles();
         secondSet.removeAll(firstSet);

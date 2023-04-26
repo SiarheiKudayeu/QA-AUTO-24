@@ -1,13 +1,10 @@
 package lesson2;
 
-import org.openqa.selenium.Cookie;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
-import java.util.Set;
 
 public class WebDriverMethods {
     public static void main(String[] args) throws InterruptedException {
@@ -100,7 +97,6 @@ public class WebDriverMethods {
 
         //driver.findElement();
         //driver.findElements();
-
 
 
     }

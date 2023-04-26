@@ -24,10 +24,11 @@ public class Locators1 {
     private static class Url {
         private static final String applyToSet = "https://www.guinnessworldrecords.com/records/apply-to-set-or-break-a-record/";
         private static final String homiak = "https://uhomki.com.ua/ru/";
-        private static final String loginPage ="https://www.guinnessworldrecords.com/Account/Login";
+        private static final String loginPage = "https://www.guinnessworldrecords.com/Account/Login";
     }
-    private static void arraySout(List<WebElement> elementList){
-        for (WebElement element: elementList){
+
+    private static void arraySout(List<WebElement> elementList) {
+        for (WebElement element : elementList) {
             System.out.println(element.getText());
         }
     }
@@ -89,7 +90,8 @@ public class Locators1 {
         Thread.sleep(2000);
         driver.findElement(By.linkText("APPLICATION PROCESS")).click();
         Thread.sleep(3000);
-        driver.quit()*/;
+        driver.quit()*/
+        ;
 //Поиск элемента по Partial Text
         /*driver.get("https://www.guinnessworldrecords.com/records/apply-to-set-or-break-a-record/");
         //ez-accept-all
@@ -121,8 +123,6 @@ public class Locators1 {
         driver.quit();*/
 
 
-
-
 //xpath поиск по части атрибута. комбинирование
  /*       driver.get("https://www.guinnessworldrecords.com/records/apply-to-set-or-break-a-record/");
         //ez-accept-all
@@ -130,7 +130,6 @@ public class Locators1 {
         Thread.sleep(2000);
         driver.findElement
                 (By.xpath("//div[contains(@class, 'block block-4-12')][not(contains(@class, 'columned'))]")).click();*/
-
 
 
 //относительный путь внутри относительного пути
@@ -170,10 +169,6 @@ public class Locators1 {
                 ("//*[@class='columned block block-4-12'][2]/a")).getText());*/
 
 
-
-
-
-
 //xpath операторы >, <, >=, <=, !=
 //input[@data-val-length-max<=100] - password
         //input[@data-val-length-max!=100] - login
@@ -206,7 +201,6 @@ public class Locators1 {
         driver.findElement(Locators.searchHomiak).sendKeys("Хомяк");*/
 
 
-
         //использование статического метода
     /*    driver.get("https://www.guinnessworldrecords.com/search");
         //ez-accept-all
@@ -220,10 +214,6 @@ public class Locators1 {
         System.out.println("");
         arraySout(elements2);
         driver.quit();*/
-
-
-
-
 
 
     }

@@ -68,6 +68,5 @@ public class Locators2 {
         driver.findElement(By.cssSelector(".btn:not(.btn-primary)")).click();
 
 
-
     }
 }

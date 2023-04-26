@@ -13,6 +13,7 @@ public class SelectorsClass {
         private static final By city = By.xpath("//select[@id='city_list']");
         private static final By city2 = By.id("city_list");
     }
+
     public static void main(String[] args) throws InterruptedException {
         //Для работы с дропдаунами необходимо создать объект класса Select
         //для получения возможности работаь с его методами
@@ -59,8 +60,6 @@ public class SelectorsClass {
         regionSelect.deselectAll();*/
 
 
-
-
         //isMultiple(); возвращает true если данный select поддерживает множественный выбор
         WebElement hotelElement = driver.findElement(By.id("hotel_list"));
         Select hotelSelect = new Select(hotelElement);
@@ -73,9 +72,8 @@ public class SelectorsClass {
         System.out.println(cityListSelect.isMultiple());
 
 
-
         //getOptions возвращает все элементы данного Select
-        List<WebElement> cityList =  cityListSelect.getOptions();
+        List<WebElement> cityList = cityListSelect.getOptions();
         //System.out.println(cityList);
         /*for (WebElement city:cityList){
             if(city.getText().equals("Все города")){
@@ -91,7 +89,7 @@ public class SelectorsClass {
         cityListSelect.selectByVisibleText("Одесса");
         cityListSelect.deselectByVisibleText("Все города");
         System.out.println("===============");
-        for(WebElement city: cityListSelect.getAllSelectedOptions()){
+        for (WebElement city : cityListSelect.getAllSelectedOptions()) {
             System.out.println(city.getText());
         }
         System.out.println("================");
@@ -99,7 +97,6 @@ public class SelectorsClass {
         //getFirstSelectedOptions() возвращает первый выбранный элемент
         System.out.println(cityListSelect.getFirstSelectedOption().getText());
         driver.quit();
-
 
 
         //equals сравнивание двух элементов
