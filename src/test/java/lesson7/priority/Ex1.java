@@ -170,5 +170,4 @@ public class Ex1 {
             assertEquals(beshamel.get(i).getText(), labelsBeshamel[i]);
         }
     }
-
 }

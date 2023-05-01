@@ -54,6 +54,13 @@ public class MyWaiters {
     public void waitElementToBeClickable(WebElement element) {
         waitForFunction(ExpectedConditions.elementToBeClickable(element), EXPLICITY_WAIT);
     }
+    public WebElement waitElementToBeClickableReturn(By by) {
+        return fluentWait(EXPLICITY_WAIT).until(ExpectedConditions.elementToBeClickable(by));
+    }
+
+    public WebElement waitElementToBeClickableReturn(WebElement element) {
+        return fluentWait(EXPLICITY_WAIT).until(ExpectedConditions.elementToBeClickable(element));
+    }
 
     public void waitElementToBeSelected(By by) {
         waitForFunction(ExpectedConditions.elementToBeSelected(by), EXPLICITY_WAIT);
@@ -86,6 +93,10 @@ public class MyWaiters {
     public WebElement waitPresenceOfElementReturn(By by) {
         return fluentWait(EXPLICITY_WAIT).until(ExpectedConditions.presenceOfElementLocated(by));
     }
+    public void waitPresenceOfElement(By by) {
+        waitForFunction(ExpectedConditions.presenceOfElementLocated(by), EXPLICITY_WAIT);
+    }
+
     public void waitTitleContainsText(String text) {
         waitForFunction(ExpectedConditions.titleContains(text), EXPLICITY_WAIT);
     }
