@@ -40,6 +40,7 @@ public class MyWaiters {
     }
 
     public void waitForFrameAndSwitchToIt(By by) {
+        waitForFunction(ExpectedConditions.visibilityOf(driver.findElement(by)), EXPLICITY_WAIT);
         waitForFunction(ExpectedConditions.frameToBeAvailableAndSwitchToIt(by), EXPLICITY_WAIT);
     }
 
