@@ -3,8 +3,10 @@ package lesson9;
 import lesson5.MyWaiters;
 import lesson5.Waiters;
 import org.openqa.selenium.WebDriver;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+
 
 public class Assertions {
     private final Elements elements;
@@ -25,5 +27,10 @@ public class Assertions {
     public void equalsOfElementAndLabelText(String xpathOfElement, String expectedString){
         assertEquals(elements.getTextFromElementXpath(xpathOfElement),expectedString,
                 "Я ожидал получить "+expectedString+". А получил "+ elements.getTextFromElementXpath(xpathOfElement));
+    }
+
+    public void equalsOfStrings(String actualString, String expectedString){
+        assertEquals(actualString,expectedString,
+                "Я ожидал получить "+expectedString+". А получил "+ actualString);
     }
 }
